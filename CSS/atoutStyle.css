@@ -1,0 +1,58 @@
+#atout {
+    margin-top: 3%;
+}
+
+@media (min-width: 600px) {
+    .buttAtout {
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #6a5af9, #00d4ff);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+        transition: all 0.3s ease;
+    }
+
+    .buttAtout:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 25px rgba(0, 212, 255, 0.9);
+    }
+
+    .buttAtout:active {
+        transform: translateY(3px);
+        box-shadow: 0 0 10px rgba(106, 90, 249, 0.6);
+    }
+
+    .uldetail {
+        margin-left: 5%;
+        margin-bottom: 3%;
+        color: #cfd8ff;
+    }
+
+    .lidetail {
+        margin: 1% 0;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttAtout {
+        padding: 8px 14px;
+        background: linear-gradient(135deg, #6a5af9, #00d4ff);
+        color: white;
+        border-radius: 15px;
+        font-size: 13px;
+        box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+    }
+
+    .uldetail {
+        margin-left: 10%;
+        margin-bottom: 8%;
+    }
+
+    .lidetail {
+        line-height: 1.8;
+    }
+}

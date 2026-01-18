@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Mono&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/dropdown.css"/>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/globalStyle.css">
+    <link rel="stylesheet" href="../CSS/portfolio.css">
+</head>
+<body>
+    <script src="../dropdown.js" defer></script>
+    <script src="globalpotfolio.js" defer></script>
+    <header>
+        <div class="row">
+            <h2 id="title">E-portfolio Alexis BONNARD</h2>
+            <div class="divlienHead">
+                <p class="lienHead" onclick=" window.location.href ='../contact.html'">Me joindre</p>
+                <a class="lienHead" href="../ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="row divheader">
+            <button onclick=" window.location.href ='../formation.html'" class="buttheader">Ma formation</button>
+            <div class="dropdown">
+                <button class="bloc-top">
+                    <span>Mes actions professionnelles</span>
+                    <img src="image/fleche-vers-le-bas.png  ">
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <p onclick=" window.location.href ='../experiencePro.html'">Mes expériences professionnelles</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='../stagesPro.html'">Mes stages</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='../situationEval.html'">Mes situations d'apprentissage et d'évaluation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="buttheader" onclick="window.location.href='../competence.html'">Mes compétences</button>
+            <button class="buttheader" onclick=" window.location.href ='../atouts.html'">Mes atouts</button>
+            <button class="buttheader" onclick=" window.location.href ='../loisirs.html'">Mes loisirs</button>
+        </div>
+        <div class="body">
+            <h2 class="tree"><a href="../index.html" class="tree">Accueil</a> > Compétence : Administrer des systèmes informatiques communicants complexes (Niveau 2)</h2>
+        </div>
+    </header>
+    <div class="body">
+        <h1>Compétence : Administrer des systèmes informatiques communicants complexes (Niveau 2)</h1>
+        <ul>
+            Apprentissages critiques :
+            <li>AC23.01 | Concevoir et développer des applications communicantes</li>
+            <li>AC23.02 | Utiliser des serveurs et des services réseaux virtualisés</li>
+            <li>AC23.03 | Sécuriser les services et données d’un système</li>
+        </ul>
+        <p>Durant ma 2ème année de BUT Informatique, j'ai eu l'opportunité de mettre en place mon apprentissage dans un groupe de 5 étudiants dans la conception et le développement d'un site e-commerce de vente de vélos électriques d'occasion pour le client fictif Upway</p>
+        <h2 class="titlePartie">Partie 1 : Applications communicantes</h2>
+        <div class="row">
+            <div id="schema">
+                <p>[ Client Vue.js ]</p>
+                        <p>|</p>
+                <p>HTTP / JSON</p>
+                        <p>|</p>
+                <p>[ API REST C# ]</p>
+                        <p>|</p>
+                <p>[ Base de données ]</p>
+            </div>
+            <div>
+                <p>Le projet réalisé repose sur des architectures communicantes, notamment des applications web utilisant des échanges client–serveur. Nous avons développé des applications capables de communiquer entre une API Rest en C# et un client en VueJs, en respectant les principes du modèle client–serveur.</p>
+            </div>
+        </div>
+        <h2 class="titlePartie">Partie 2 : Serveurs</h2>
+        <div>
+            <p>Dans le cadre du projet, l’application a été hébergée sur une infrastructure cloud fournie par Microsoft Azure. Cette solution nous a permis de disposer d’un environnement distant accessible à tout moment. L’utilisation d’Azure a facilité le déploiement et les tests de l’application.</p>
+        </div>
+
+        <h2 class="titlePartie">Partie 3 : Sécuriser les services</h2>
+        <div>
+            <p>Toute la partie sécurisation des données  a été effectuée, le serveur Azure n'était accessible que par les 5 personnes travaillant sur le projet, les comptes étaient protégés par des mots de passe différents. L'accès aux différentes pages de l'application a été réglementé par des comptes avec des droits d'accès différents. La base de données est sécurisé par un mot de passe hashé.</p>
+        </div>
+    </div> 
+    
+    <footer id="footerstat">
+        <div class="divlienFooter">
+            <p class="lienHead" onclick=" window.location.href ='../contact.html'">Me joindre</p>
+            <a class="lienHead" href="../ressources/Alexis BONNARD.pdf" target="_blank">Télécharger ma fiche de perso</a>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div>
+                    <a class="footlien" href="https://www.linkedin.com/in/alexis-bonnard-8a3a18332/">
+                        <img class="footimg" src="../image/LinkedIn_icon.svg.png" alt="">Linkedin
+                    </a>
+                </div>
+                <div>
+                    <a class="footlien" href="https://github.com/AlexisBONNARD">
+                        <img class="footimg" src="../image/GitHub_Invertocat_Logo.svg.png" alt="">Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

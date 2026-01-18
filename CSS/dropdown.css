@@ -1,0 +1,109 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', monospace;
+}
+
+.dropdown {
+    position: relative;
+    max-width: 300px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1e2030, #24273a);
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.25);
+}
+
+.bloc-top {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cad3f5;
+    background: transparent;
+    cursor: pointer;
+    height: 55px;
+    border: none;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.bloc-top:hover {
+    background: rgba(0, 212, 255, 0.15);
+}
+
+.bloc-top img {
+    width: 18px;
+    filter: brightness(1.5);
+}
+
+.bloc-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(24, 25, 38, 0.95);
+    backdrop-filter: blur(8px);
+    transition: max-height 0.4s ease-in-out;
+    z-index: 1000;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.bloc-links li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.bloc-links li:hover {
+    background: rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+}
+
+.bloc-links li:last-child {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .row {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .bloc-top span {
+        font-size: 16px;
+    }
+
+    .bloc-links li p {
+        font-size: 17px;
+        color: #cad3f5;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    .row {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .bloc-top span {
+        font-size: 13px;
+    }
+
+    .bloc-links li p {
+        font-size: 13px;
+        color: #cad3f5;
+    }
+}

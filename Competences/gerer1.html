@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-portfolio QD loisirs</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Mono&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/dropdown.css"/>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/globalStyle.css">
+    <link rel="stylesheet" href="../CSS/portfolio.css">
+</head>
+<body>
+    <script src="../dropdown.js" defer></script>
+    <script src="globalpotfolio.js" defer></script>
+    <header>
+        <div class="row">
+            <h2 id="title">E-portfolio Alexis BONNARD</h2>
+            <div class="divlienHead">
+                <p class="lienHead" onclick=" window.location.href ='../contact.html'">Me joindre</p>
+                <a class="lienHead" href="../ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="row divheader">
+            <button onclick=" window.location.href ='../formation.html'" class="buttheader">Ma formation</button>
+            <div class="dropdown">
+                <button class="bloc-top">
+                    <span>Mes actions professionnelles</span>
+                    <img src="image/fleche-vers-le-bas.png  ">
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <p onclick=" window.location.href ='../experiencePro.html'">Mes expériences professionnelles</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='../stagesPro.html'">Mes stages</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='../situationEval.html'">Mes situations d'apprentissage et d'évaluation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="buttheader" onclick="window.location.href='../competence.html'">Mes compétences</button>
+            <button class="buttheader" onclick=" window.location.href ='../atouts.html'">Mes atouts</button>
+            <button class="buttheader" onclick=" window.location.href ='../loisirs.html'">Mes loisirs</button>
+        </div>
+        <div class="body">
+            <h2 class="tree"><a href="../index.html" class="tree">Accueil</a> > Compétence : Optimiser des applications informatiques (Niveau 1)</h2>
+        </div>
+    </header>
+    <div class="body">
+        <h1>Compétence : Gérer des données de l’information (Niveau 1)</h1>
+        <ul>
+            Apprentissages critiques :
+            <li>AC14.01 | Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers une application)</li>
+            <li>AC14.02 | Visualiser des données</li>
+            <li>AC14.03 | Concevoir une base de données relationnelle à partir d’un cahier des charges</li>
+        </ul>
+        <p> Durant ma 1ère année de BUT Informatique, j'ai eu l'opportunité de mettre en place mon apprentissage dans la conception d'une base de données de l'entreprise fictive : « Matski »</p>
+
+        <h2 class="titlePartie">Partie 1 : Création de la base de données</h2>
+
+        <div class="rowNoGap">
+            <div>
+                <div class="image-wrapper extra">
+                    <img class="imageInDiv" src="../image/ancienBase.png">
+                    <p>Base de données actuelle de Matski</p>
+                </div>
+                
+                <div class="image-wrapper extra">
+                    <img class="imageInDiv" src="../image/nouvelBase.png">
+                    <p>Base de données future</p>
+                </div>
+                
+            </div>
+            <div>
+                <p>Matski m'a fourni leur base de données actuelle, une base incomplète avec des erreurs. Après avoir expliqué au client ce qu'il n'allait pas dans leur base, j'en ai réalisé une autre en fonction de leur nouveau besoin.</p>
+                <ul> 
+                    Leur base actuelle a les erreurs suivantes :
+                    <li>La table Client possède des attributs qui ne sont pas utiles</li>
+                    <li>La table Article possède des attributs "Contact" devrait être dans la table Client.</li>
+                    <li>La table Article possède l'attribut PrixVente également présent dans l'association TarifVente, l'attribut doit donc être supprimé d'Article.</li>
+                </ul>
+                <p>La nouvelle base que j'ai réalisée règle les erreurs mais également ajoute une partie achat de l'entreprise. Elle ajoute les tables suivantes : Fournisseur, Contact, Approvisionnement et Caractéristique d'un article</p>
+            </div>
+        </div>
+
+        <h2 class="titlePartie">Partie 2 : Requêtage</h2>
+        <div>
+            <img id="req" src="../image/requête.png">
+            <p>Durant notre étude de la table, l’entreprise nous a informé qu’il voudrait connaître quelques informations sur la base de données pour faire une analyse des données économiques de l’entreprise. Ils nous ont donc posé plusieurs questions auxquelles j'ai répondu en faisant des requêtes sur leur base de données actuelle.</p>
+            <img src="../image/1.png">
+        </div>
+
+    </div>
+    
+    <footer id="footerstat">
+        <div class="divlienFooter">
+            <p class="lienHead" onclick=" window.location.href ='../contact.html'">Me joindre</p>
+            <a class="lienHead" href="../ressources/Alexis BONNARD.pdf" target="_blank">Télécharger ma fiche de perso</a>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div>
+                    <a class="footlien" href="https://www.linkedin.com/in/alexis-bonnard-8a3a18332/">
+                        <img class="footimg" src="../image/LinkedIn_icon.svg.png" alt="">Linkedin
+                    </a>
+                </div>
+                <div>
+                    <a class="footlien" href="https://github.com/AlexisBONNARD">
+                        <img class="footimg" src="../image/GitHub_Invertocat_Logo.svg.png" alt="">Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

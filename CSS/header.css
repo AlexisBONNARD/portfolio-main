@@ -1,0 +1,82 @@
+@media (min-width: 600px) {
+    .buttheader {
+        height: 50px;
+        width: 150px;
+        background: linear-gradient(135deg, #00d4ff, #6a5af9);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+        transition: 0.3s;
+    }
+
+    .buttheader:hover {
+        transform: scale(1.05);
+    }
+
+    .divheader {
+        padding: 20px 0;
+        background: #181926;
+    }
+
+    header {
+        border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+        background: #181926;
+    }
+
+    .divlienHead {
+        margin-left: 10%;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .lienHead {
+        font-size: 20px;
+        text-decoration: none;
+        color: #cad3f5;
+        transition: 0.3s;
+    }
+
+    .lienHead:hover {
+        color: #00d4ff;
+        text-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+    }
+
+    #title {
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttheader {
+        height: 45px;
+        width: 140px;
+        background: linear-gradient(135deg, #00d4ff, #6a5af9);
+        color: white;
+        border-radius: 14px;
+        font-size: 12px;
+    }
+
+    .divheader,
+    header {
+        background: #181926;
+    }
+
+    .divlienHead {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .lienHead {
+        font-size: 15px;
+        color: #cad3f5;
+    }
+
+    #title {
+        font-size: 20px;
+        color: white;
+    }
+}

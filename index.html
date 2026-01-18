@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alexis BONNARD">
+    <meta name="keywords" content="Alexis BONNARD, portfolio, BUT informatique, développeur, développement web, développement logiciel, développement jeux vidéos, jeux vidéos, conception, validation, projets étudiants, programmation, informatique">
+    <meta name="description" content="Portfolio de Alexis BONNARD, étudiant en BUT Informatique. Conception, développement et validation d'applications. Projets, compétences, réalisations et contact.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-portfolio Alexis BONNARD</title>
+	<link rel="icon"  href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Mono&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/dropdown.css"/>
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/globalStyle.css">
+</head>
+<body>
+    <script src="dropdown.js" defer></script>
+    <script src="loisirs.js" defer></script>
+    <header>
+        <div class="row" >
+            <h2 id="title">E-portfolio Alexis BONNARD</h2>
+            <div class="divlienHead">
+                <p class="lienHead" onclick=" window.location.href ='./contact.html'">Me joindre</p>
+                <a class="lienHead" href="ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="row divheader">
+            <button onclick=" window.location.href ='./formation.html'" class="buttheader">Ma formation</button>
+            <div class="dropdown">
+                <button class="bloc-top">
+                    <span>Mes actions professionnelles</span>
+                    <img src="image/fleche-vers-le-bas.png  ">
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <p onclick=" window.location.href ='./experiencePro.html'">Mes expériences professionnelles</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='./stagesPro.html'">Mes stages</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='./situationEval.html'">Mes situations d'apprentissage et d'évaluation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="buttheader" onclick="window.location.href='./competence.html'">Mes compétences</button>
+            <button class="buttheader" onclick=" window.location.href ='./atouts.html'">Mes atouts</button>
+            <button class="buttheader" onclick=" window.location.href ='./loisirs.html'">Mes loisirs</button>
+        </div>
+    </header>
+    <div class="body">
+        <div>
+            <h1>Accueil</h1>
+        </div>
+        <div class="row">
+            <div id="pres">
+                <h2 id="titlepage">Bonjour et Bienvenue sur mon E-portfolio</h2>
+                <p class="textpres">Je suis Alexis BONNARD, passionné par la programmation. Je me suis dirigé vers un <a class="lien" onclick="window.location.href='./competence.html'">BUT Informatique</a> après mon bac STI2D (sciences et technologies de l'industrie et du développement durable), je suis actuellement en 3ème année.</p>
+                <p class="textpres">J'ai 21 ans, j'habite à Alby sur Chéran, je suis actuellement en formation Initiale.</p>
+                <p class="textpres">J'adore la programmation d'applications et j'aime celle de sites web, je suis fasciné par les jeux vidéos, les livres et la mécanique.</p>
+                <p class="textpres">Vous pouvez découvrir mes compétences professionnelles avec ce portfolio, ainsi que mes atouts techniques.</p>
+            </div>
+            <img class="loisir portrait" id="quentin"  src="./image/alexisBONNARD.webp">
+        </div>
+    </div>
+    
+    <footer id="footerstat">
+        <div class="divlienFooter">
+            <p class="lienHead" onclick=" window.location.href ='./contact.html'">Me joindre</p>
+            <a class="lienHead" href="ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div>
+                    <a class="footlien" href="https://www.linkedin.com/in/alexis-bonnard-8a3a18332/">
+                        <img class="footimg" src="image/LinkedIn_icon.svg.png" alt="">Linkedin
+                    </a>
+                </div>
+                <div>
+                    <a class="footlien" href="https://github.com/AlexisBONNARD">
+                        <img class="footimg" src="image/GitHub_Invertocat_Logo.svg.png" alt="">Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

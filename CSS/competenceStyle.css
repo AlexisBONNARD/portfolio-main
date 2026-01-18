@@ -1,0 +1,49 @@
+p {
+    line-height: 32px;
+    color: #d6e4ff;
+}
+
+@media (min-width: 600px) {
+    .divbutt {
+        margin: 3% 0;
+    }
+
+    .buttCompet {
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #00d4ff, #6a5af9);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 0 18px rgba(106, 90, 249, 0.7);
+        transition: 0.3s;
+    }
+
+    .buttCompet:hover {
+        transform: scale(1.05);
+    }
+
+    .buttCompet:active {
+        transform: translateY(3px);
+        box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+    }
+
+    h3, h4 {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 600px) {
+    .divbutt {
+        margin: 6% 0;
+    }
+
+    .buttCompet {
+        padding: 6px 12px;
+        font-size: 13px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #00d4ff, #6a5af9);
+        color: white;
+    }
+}

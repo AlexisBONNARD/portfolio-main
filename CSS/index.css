@@ -1,0 +1,75 @@
+.next {
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    font-size: 30px;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.25);
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+.next:hover {
+    background: rgba(0, 212, 255, 0.5);
+    transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+    .portrait {
+        width: 25%;
+        height: 25%;
+        display: none;
+        border-radius: 16px;
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    }
+
+    #pres {
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+
+    .textpres {
+        margin-bottom: 2%;
+    }
+
+    .next {
+        right: 15%;
+        top: 37%;
+    }
+
+    #titlepage {
+        font-size: 32px;
+        margin-bottom: 2%;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 600px) {
+    .next {
+        right: 15%;
+        top: 87%;
+    }
+
+    .portrait {
+        top: 75%;
+    }
+
+    #quentin,
+    #mura {
+        width: 200px;
+        display: none;
+        position: absolute;
+        border-radius: 14px;
+    }
+
+    #mura {
+        height: 275px;
+    }
+
+    #titlepage {
+        font-size: 20px;
+        margin-bottom: 5%;
+        color: #cad3f5;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-portfolio QD loisirs</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Mono&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dropdown.css"/>
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/globalStyle.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
+</head>
+<body>
+    <script src="dropdown.js" defer></script>
+    <script src="loisirs.js" defer></script>
+    <header>
+        <div class="row">
+            <h2 id="title">E-portfolio Alexis BONNARD</h2>
+            <div class="divlienHead">
+                <p class="lienHead" onclick=" window.location.href ='contact.html'">Me joindre</p>
+                <a class="lienHead" href="ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="row divheader">
+            <button onclick=" window.location.href ='./formation.html'" class="buttheader">Ma formation</button>
+            <div class="dropdown">
+                <button class="bloc-top">
+                    <span>Mes actions professionnelles</span>
+                    <img src="image/fleche-vers-le-bas.png  ">
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <p onclick=" window.location.href ='./experiencePro.html'">Mes expériences professionnelles</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='./stagesPro.html'">Mes stages</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='./situationEval.html'">Mes situations d'apprentissage et d'évaluation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="buttheader" onclick="window.location.href='./competence.html'">Mes compétences</button>
+            <button class="buttheader" onclick=" window.location.href ='./atouts.html'">Mes atouts</button>
+            <button class="buttheader" onclick=" window.location.href ='./loisirs.html'">Mes loisirs</button>
+        </div>
+        <div class="body">
+            <h2 class="tree"><a href="./index.html" class="tree">Accueil</a> > Mes loisirs</h2>
+        </div>
+    </header>
+    <div class="mesloisirs">
+        <h1>Mes loisirs</h1>
+    
+        <div>
+            <div>
+                <div class="loisir anim">
+                    <img class="image" src="./image/Roman.png">
+                    <div class="box">
+                        <h3 class="textsur">Livres:</h3>
+                        <p class="textsur"> Aime les romans, je m'intéresse à différents genres : fantaisie, action, aventure, horreur, enquête, ...</p>
+                    </div>
+                </div>
+                <div class="loisir anim">
+                    <img class="image" src="./image/jeu.png">
+                    <div class="box">
+                        <h3 class="textsur">Jeux Vidéos:</h3>
+                        <p class="textsur">Joue à des jeux vidéo sur tout type de plateforme et de genre : MMORPG, roguelike, monde ouvert, action aventure, simulation, survie, coop en ligne, ...</p>
+                    </div>
+                </div>
+                <div class="loisir anim">
+                    <img class="image" src="image/coding.jpg">
+                    <div class="box">
+                        <h3 class="textsur">Programmation:</h3>
+                        <p class="textsur">Développement de projet personnel, des applications Desktop/Web ainsi que de jeux vidéos.</p>
+                    </div>
+                </div>
+                <div class="loisir anim">
+                    <img class="image" src="image/robots.jpg">
+                    <div class="box">
+                        <h3 class="textsur">Création manuelle:</h3>
+                        <p class="textsur">Création de robots et de petit mécanisme automatique ainsi que des jeux de société</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footerabs">
+        <div class="divlienFooter">
+            <p class="lienHead" onclick=" window.location.href ='contact.html'">Me joindre</p>
+            <a class="lienHead" href="ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div>
+                    <a class="footlien" href="https://www.linkedin.com/in/alexis-bonnard-8a3a18332/">
+                        <img class="footimg" src="image/LinkedIn_icon.svg.png" alt="">Linkedin
+                    </a>
+                </div>
+                <div>
+                    <a class="footlien" href="https://github.com/AlexisBONNARD">
+                        <img class="footimg" src="image/GitHub_Invertocat_Logo.svg.png" alt="">Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

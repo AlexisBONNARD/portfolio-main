@@ -1,0 +1,31 @@
+.titleul {
+    font-weight: bold;
+    color: #8aadf4;
+}
+
+@media (min-width: 600px) {
+    .image {
+        width: 25%;
+        border-radius: 14px;
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+    }
+
+    .li {
+        margin-left: 10%;
+    }
+
+    .apprentissage {
+        margin: 3% 0 6% 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        width: 30%;
+        border-radius: 12px;
+    }
+
+    .apprentissage {
+        margin: 5% 0 10%;
+    }
+}

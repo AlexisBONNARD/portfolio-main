@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-portfolio QD Formation</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Mono&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/formationstyle.css">
+    <link rel="stylesheet" href="CSS/dropdown.css"/>
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/globalStyle.css">
+</head>
+<body>
+    <script src="dropdown.js" defer></script>
+    <header>
+        <div class="row">
+            <h2 id="title">E-portfolio Alexis BONNARD</h2>
+            <div class="divlienHead">
+                <p class="lienHead" onclick=" window.location.href ='./contact.html'">Me joindre</p>
+                <a class="lienHead" href="ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="row divheader">
+            <button onclick=" window.location.href ='./formation.html'" class="buttheader">Ma formation</button>
+            <div class="dropdown">
+                <button class="bloc-top">
+                    <span>Mes actions professionnelles</span>
+                    <img src="image/fleche-vers-le-bas.png  ">
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <p onclick=" window.location.href ='./experiencePro.html'">Mes expériences professionnelles</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='./stagesPro.html'">Mes stages</p>
+                        </li>
+                        <li>
+                            <p onclick=" window.location.href ='./situationEval.html'">Mes situations d'apprentissage et d'évaluation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="buttheader" onclick="window.location.href='./competence.html'">Mes compétences</button>
+            <button class="buttheader" onclick=" window.location.href ='./atouts.html'">Mes atouts</button>
+            <button class="buttheader" onclick=" window.location.href ='./loisirs.html'">Mes loisirs</button>
+        </div>
+        <div class="body">
+            <h2 class="tree"><a href="./index.html" class="tree">Accueil</a> > Ma formation</h2>
+        </div>
+    </header>
+    <div class="body">
+        <h1>Ma formation</h1>
+        <div class="form">
+            <img src="./image/IUT.jpg" class="image">
+            <div>
+                <h2>2023-2026</h2>
+                <p>Actuellement en troisème année de BUT Informatique, Université Savoie Mont Blanc - IUT d'Annecy.</p>
+            </div>
+        </div>
+        <div class="form">
+            <img src="./image/CPGETSI.jpg" class="image">
+            <div>
+                <h2>2022-2023</h2>
+                <p>CPGE TSI : Classe Préparatoire au Grande Ecole Technologie et Sciences Industrielles, Lycée Monge - Chambéry.</p>
+            </div>
+        </div>
+        <div class="form">
+            <img src="./image/Albanais.jpg" class="image">
+            <div>
+                <h2>2022</h2>
+                <p>Baccalauréat téchnologique, STI2D (sciences et technologies de l'industrie et du développement durable), mention assez bien, Lycée Albanais, Rumilly.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footerstat">
+        <div class="divlienFooter">
+            <p class="lienHead" onclick=" window.location.href ='./contact.html'">Me joindre</p>
+            <a class="lienHead" href="ressources/Alexis BONNARD.pdf" target="_blank">Télécharger mon CV</a>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div>
+                    <a class="footlien" href="https://www.linkedin.com/in/alexis-bonnard-8a3a18332/">
+                        <img class="footimg" src="image/LinkedIn_icon.svg.png" alt="">Linkedin
+                    </a>
+                </div>
+                <div>
+                    <a class="footlien" href="https://github.com/AlexisBONNARD">
+                        <img class="footimg" src="image/GitHub_Invertocat_Logo.svg.png" alt="">Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
