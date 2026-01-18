@@ -20,21 +20,18 @@ buttons.forEach(button => {
         else if(nom == "Langues étrangères")
         {
             divText.innerHTML += '<ul>'
-            divText.innerHTML += '    <li>Anglais : Niveau B1 (scolaire et professionnel – autonomie dans des contextes connus)</li>'
-            divText.innerHTML += '    <li>Espagnol : Niveau A2 (scolaire – échanges simples et quotidiens)</li>'
-            divText.innerHTML += '    <li>Japonais : Niveau A0 (Aucun contact préalable avec la langue — ne comprend ni ne produit de phrases simples.)</li>'
+            divText.innerHTML += '    <li>Anglais : Niveau B2 (scolaire et professionnel – autonomie dans des contextes connus)</li>'
+            divText.innerHTML += '    <li>Italien : Niveau B1 (scolaire et familial – échanges complexe et quotidiens)</li>'
             divText.innerHTML += '</ul>'
         }
 
         else if(nom == "Soft skills")
         {
             divText.innerHTML +=  '<ul>'
-            divText.innerHTML +=  '    <li>Curiosité : volonté d’apprendre et de comprendre.</li>'
-            divText.innerHTML +=  '    <li>Travail et esprit d'+"'"+'équipe : interagir et collaborer au sein d'+"'"+'une équipe.</li>'
-            divText.innerHTML +=  '    <li>Organisation : priorisation et organisation des tâches.</li>'
+            divText.innerHTML +=  '    <li>Curieux : volonté d’apprendre et de comprendre.</li>'
+            divText.innerHTML +=  '    <li>Travaileur et esprit d'+"'"+'équipe : interagir et collaborer au sein d'+"'"+'une équipe.</li>'
+            divText.innerHTML +=  '    <li>Organiser : organise toujour tous a lavence.</li>'
             divText.innerHTML +=  '</ul>'
         }
-
     })
-
 });
