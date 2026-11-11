@@ -12,7 +12,10 @@
 </head>
 <body>
     <script src="dropdown.js" defer></script>
+    <script src="./js/components.js"></script>
+
     <header>
+        <div id="header"></div>
         <div class="row">
             <h2 id="title">E-portfolio Alexis BONNARD</h2>
             <div class="divlienHead">
@@ -49,6 +52,7 @@
             <h2 class="tree"><a href="./index.html" class="tree">Accueil</a> > Me joindre</h2>
         </div>
     </header>
+
     <div class="body">
         <h1>Me joindre</h1>
         <p>Vous pouvez me joindre via le formulaire ci-dessous ou bien par mail ou téléphone :</p>
@@ -75,7 +79,7 @@
             <textarea name="message" placeholder="Message" required></textarea>
 
             <!-- Options FormSubmit -->
-            <input type="hidden" name="_subject" value="Nouveau message – Portfolio">
+            <input type="hidden" name="_subject" value="Nouveau message Portfolio">
             <input type="hidden" name="_captcha" value="false">
 
             <!-- Anti-spam -->
@@ -106,6 +110,7 @@
             </div>
         </div>
     </footer>
-    
+    <div id="footer"></div>
+
 </body>
 </html>
